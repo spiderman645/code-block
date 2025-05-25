@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 3.9%; /* Dark Background */
+    --foreground: 0 0% 98%; /* Light Text */
+
+    --card: 0 0% 3.9%; /* Dark Card Background */
+    --card-foreground: 0 0% 98%; /* Light Card Text */
+
+    --popover: 0 0% 3.9%; /* Dark Popover Background */
+    --popover-foreground: 0 0% 98%; /* Light Popover Text */
+
+    --primary: 273 70% 61%; /* Vibrant Purple (same as before, good contrast on dark) */
+    --primary-foreground: 0 0% 98%; /* White-ish for text on primary (same as before) */
+
+    --secondary: 0 0% 14.9%; /* Darker Secondary */
+    --secondary-foreground: 0 0% 98%; /* Light Secondary Text */
+
+    --muted: 0 0% 14.9%; /* Darker Muted */
+    --muted-foreground: 0 0% 63.9%; /* Lighter Muted Text */
+
+    --accent: 340 33% 20%; /* Darker Soft Lavender for dark mode */
+    --accent-foreground: 0 0% 98%; /* Light Accent Text */
+
+    --destructive: 0 62.8% 30.6%; /* Darker Destructive */
+    --destructive-foreground: 0 0% 98%; /* Light Destructive Text */
+
+    --border: 0 0% 14.9%; /* Dark Border */
+    --input: 0 0% 14.9%; /* Dark Input Background */
+    --ring: 273 70% 61%; /* Primary color for focus rings (same) */
+
+    --radius: 0.5rem;
+
+    /* Sidebar specific colors - Dark Theme */
+    --sidebar-background: 0 0% 10%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 273 70% 61%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 340 33% 25%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 0 0% 15%;
+    --sidebar-ring: 273 70% 61%;
+
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+
+  .dark {
+    /* This block can be used for an explicit dark theme toggle in the future.
+       For now, the :root variables are set to the dark theme directly. */
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 273 70% 61%; 
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 340 33% 20%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 273 70% 61%;
+
+    --sidebar-background: 0 0% 10%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 273 70% 61%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 340 33% 25%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 0 0% 15%;
+    --sidebar-ring: 273 70% 61%;
+
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
